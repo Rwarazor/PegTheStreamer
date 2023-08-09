@@ -79,9 +79,9 @@ namespace PegTheStreamer.Behaviours {
                 Writer.Flush();
                 return;
             } else if (rawLine.Contains("PRIVMSG")) {
-                int indNameStart = rawLine.IndexOf("#") + 1;
+                int indNameStart = rawLine.IndexOf(":") + 1;
+                int nameLength = rawLine.IndexOf(" ", indNameStart) - indNameStart;
                 int indMessageStart = rawLine.IndexOf(":", indNameStart + 1) + 1;
-                int nameLength = indMessageStart - indNameStart - 2;
                 string name = rawLine.Substring(indNameStart, nameLength);
                 string message = rawLine.Substring(indMessageStart);
                 onChatMessage?.Invoke(name, message);
