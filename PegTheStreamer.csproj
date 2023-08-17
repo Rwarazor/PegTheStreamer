@@ -6,14 +6,12 @@
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<BepInExPluginGuid>ru.rwarazor.peglin.PegTheStreamer</BepInExPluginGuid>
 		<Description>Peg your streamer... I mean, Twitch chat integration for Peglin!</Description>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<LangVersion>9.0</LangVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Reference Include="C:\Users\ago-2\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Peglin\profiles\TestPegTheStreamer\BepInEx\core\0Harmony.dll" />
-		<Reference Include="C:\Users\ago-2\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Peglin\profiles\TestPegTheStreamer\BepInEx\core\BepInEx.dll" />
 		<Reference Include="C:\Program Files (x86)\Steam\steamapps\common\Peglin\Peglin_Data\Managed\Assembly-CSharp.dll" />
 		<Reference Include="C:\Program Files (x86)\Steam\steamapps\common\Peglin\Peglin_Data\Managed\Unity*.dll" />
 	</ItemGroup>
