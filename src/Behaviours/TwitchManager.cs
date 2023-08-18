@@ -30,6 +30,9 @@ namespace PegTheStreamer.Behaviours {
             }
         }
         public void SendChatMessage(string msg) {
+            if (!PTSSettingsManager.DoSendChatMessages) {
+                return;
+            }
             Writer.WriteLine($"PRIVMSG #{User.ToLower()} :" + msg);
             Writer.Flush();
         }

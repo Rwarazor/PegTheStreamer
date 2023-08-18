@@ -12,6 +12,7 @@ namespace PegTheStreamer.Behaviours {
 		public static SettingBoolean DoPullNicknames = new SettingBoolean("DoPullNicknames", "Peg The Chat?", true, backgroundColor);
 		public static SettingString TwitchLogin = new SettingString("TwitchLogin", "Twitch login: ", "", "Enter login here", backgroundColor, textColor);
 		public static SettingString TwitchOAuth = new SettingString("TwitchOAuth", "Twitch OAuth: ", "", "Enter OAuth here", backgroundColor, textColor);
+		public static SettingBoolean DoSendChatMessages = new SettingBoolean("DoSendChatMessages", "Send chat messages?", true, backgroundColor);
 		public static SettingInt VoteTime = new SettingInt("VoteTime", "Vote timer (seconds)", 35, new int[] { 10, 15, 20, 25, 30, 35, 40, 50, 60, 90, 120 }, backgroundColor);
 		public static SettingBoolean DoForceOnlyOption = new SettingBoolean("DoForceOnlyOption", "Auto-choose if single option", true, backgroundColor);
 		public static SettingBoolean EnableVoteStarting = new SettingBoolean("EnableVoteStarting", "Vote for starting relic", true, backgroundColor);
@@ -34,6 +35,7 @@ namespace PegTheStreamer.Behaviours {
 			DoPullNicknames,
 			TwitchLogin,
 			TwitchOAuth,
+			DoSendChatMessages,
 			VoteTime,
 			DoForceOnlyOption,
 			EnableVoteStarting,
