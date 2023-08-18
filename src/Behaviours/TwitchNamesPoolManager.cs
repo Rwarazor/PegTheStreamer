@@ -18,14 +18,25 @@ namespace PegTheStreamer.Behaviours {
 
         public void FreeName(string res) {
             _currentlyUsed.Remove(res);
-            _unused.Add(res);
+            if (FilterNickname(res)) {
+                _unused.Add(res);
+            }
         }
 
-        private HashSet<string> _currentlyUsed;
-        private HashSet<string> _unused;
+        private HashSet<string> _currentlyUsed = new HashSet<string>();
+        private HashSet<string> _unused = new HashSet<string>();
+
+        private string StripNickname(string name) {
+            return name;
+        }
+
+        private bool FilterNickname(string name) {
+            return name.Length <= 12;
+        }
 
         private void HandleChatMessage(string chatter, string msg) {
-            if (!_currentlyUsed.Contains(chatter)) {
+            chatter = StripNickname(chatter);
+            if (!_currentlyUsed.Contains(chatter) && FilterNickname(chatter)) {
                 _unused.Add(chatter);
             }
         }
