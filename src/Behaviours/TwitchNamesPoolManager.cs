@@ -27,7 +27,7 @@ namespace PegTheStreamer.Behaviours {
         private HashSet<string> _unused = new HashSet<string>();
 
         private string StripNickname(string name) {
-            return name;
+            return name.Substring(0, name.IndexOf("!"));
         }
 
         private bool FilterNickname(string name) {
