@@ -6,6 +6,9 @@ namespace PegTheStreamer.Patches.VoteStartersPatch {
     class StartingRelicPatch {
         [HarmonyPatch("Start")]
         public static void Postfix(GameInit __instance) {
+            // ensure names pool is created, so we start collecting names before first vote
+            var __throwAway = TwitchNamesPoolManager.Instance;
+
             if (!PTSSettingsManager.EnableMod || !PTSSettingsManager.EnableVoteStarting) { return; }
             __instance.gameObject.AddComponent(typeof(Behaviours.VoteStarters.StartingRelic));
         }
