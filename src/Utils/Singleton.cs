@@ -13,5 +13,9 @@ namespace PegTheStreamer {
 			}
 		}
 		private static T _instance;
+
+		public static void EnsureInstanceCreated() {
+			var throwAway = Instance;
+        }
 	}
 }
