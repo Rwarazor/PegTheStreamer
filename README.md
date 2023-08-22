@@ -10,14 +10,16 @@ Dedicated to Twitch streamer and YouTuber [FrostPrime_](https://www.twitch.tv/fr
 - Voting for starting, chest, elite and boss relics
 ![Starting](img/showcaseStarting.png)
 ![Elite](img/showcaseEliteRelic.png)
+- To give yourself a boost against chat, choose your starting deck from a random selection of orbs
+![STS Start](img/STSStartShowcase.gif)
+- Enemies get assigned nicknames, which are pulled directly from your chat, allowing for funny interactions
+![Enemy names](img/EnemyNames.png)
 - Post-battle rewards: orbs, upgrades, heal and max hp increase with toad relic
 ![Post-battle Options](img/showcaseManyOptions.png)
 - Chat messages to let your chat know when the vote starts and ends without stream delay
 ![Upgrade vote in chat](img/chatDoubleVote.png)
 - Extension to in-game options menu, allowing for configuration of the mod inside the game, without restarting.
-![Options](img/showcaseOptions.png)
-- A lot of options, offering high configurability, allowing playing with or against chat.
-![Options](img/manySettings.png)
+![Options](img/showcaseOptions.gif)
 
 ## Installation guide
 
@@ -33,7 +35,7 @@ Dedicated to Twitch streamer and YouTuber [FrostPrime_](https://www.twitch.tv/fr
 ![Step 4](img/OAuth_step_4.png)
 Be careful not to show this token on stream. You can revoke this token in twitch settings (Settings->Connections->Other connections->PegTheStreamer->Disconnect)
 ![Revoke token](img/Twitch_revoke_token.png)
-4. Configure other options to your liking. Don't forget to save settings. Since I removed ability to use keyboard shortcuts (otherwise you wouldn't be able to fill input fields) you need to manually press apply or accept. 
+4. Configure other options to your liking. Don't forget to save settings.
 5. Ask your chat to be nice and to not bully you too much
 6. Enjoy
 
