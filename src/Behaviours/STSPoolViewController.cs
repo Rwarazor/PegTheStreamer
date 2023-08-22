@@ -29,8 +29,9 @@ namespace PegTheStreamer.Behaviours {
 				upgradeConfirmationPanelInspect.gameObject.SetActive(false);
 				GameObject.Destroy(chosenOption);
 				deckManager.AddOrbToDeck(chosen);
+				orbsLeftToAdd--;
 				UpdateText();
-				if (--orbsLeftToAdd == 0) {
+				if (orbsLeftToAdd == 0) {
 					FinishChoosingStartingDeck();
 				}
 			}
