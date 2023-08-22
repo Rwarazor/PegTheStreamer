@@ -6,7 +6,7 @@
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<BepInExPluginGuid>ru.rwarazor.peglin.PegTheStreamer</BepInExPluginGuid>
 		<Description>Peg your streamer... I mean, Twitch chat integration for Peglin!</Description>
-		<Version>1.0.1</Version>
+		<Version>1.1.0</Version>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<LangVersion>9.0</LangVersion>
 	</PropertyGroup>
