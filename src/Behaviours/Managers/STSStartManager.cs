@@ -50,7 +50,7 @@ namespace PegTheStreamer.Behaviours {
         }
 
         public static int deckSize = 4;
-        public static int poolSize = 15;
+        public static int poolSize { get { return PTSSettingsManager.STSStartPoolSize; } }
 
         public enum STSState {
             DISABLED,

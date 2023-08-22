@@ -29,6 +29,7 @@ namespace PegTheStreamer.Behaviours {
 		public static SettingBoolean AllowSkipElite = new SettingBoolean("AllowSkipElite", "Allow skip elite relic", false, backgroundColor);
 		public static SettingBoolean EnableVoteBoss = new SettingBoolean("EnableVoteBoss", "Vote for boss relics", true, backgroundColor);
 		public static SettingBoolean AllowSkipBoss = new SettingBoolean("AllowSkipBoss", "Allow skip boss relic", false, backgroundColor);
+		public static SettingInt STSStartPoolSize = new SettingInt("STSStartPoolSize", "STS start orb pool size", 15, new int[] { 4, 10, 12, 15, 20, 25 }, backgroundColor);
 		public static SettingBoolean AllowMultipleVotes = new SettingBoolean("AllowMultipleVotes", "Multiple votes/chatter (DEBUG)", false, backgroundColor);
 
 		private SettingBase[] settings = {
@@ -53,6 +54,7 @@ namespace PegTheStreamer.Behaviours {
 			AllowSkipElite,
 			EnableVoteBoss,
 			AllowSkipBoss,
+			STSStartPoolSize,
 			AllowMultipleVotes
 		};
 		private void Awake() {
