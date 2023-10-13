@@ -59,7 +59,7 @@ namespace PegTheStreamer.Behaviours.VoteStarters {
             }
 
             if (deckManager.GetUpgradeableOrbs().Count > 0 && PTSSettingsManager.AllowPostbattleUpgrades) {
-                GameObject upgradeButton = containerOptions.Find("UpgradeButton").gameObject;
+                GameObject upgradeButton = containerOptions.Find("ButtonLayout/HealUpgradeContainer/UpgradeButton").gameObject;
                 if (upgradeButton != null && upgradeButton.activeInHierarchy && CanAffordUpgrade(upgradeButton)) {
                     PostBattleUpgradeVoteOption option = upgradeButton.gameObject.AddComponent(typeof(PostBattleUpgradeVoteOption)) as PostBattleUpgradeVoteOption;
                     voteManager.AddVoteOption(option);
@@ -69,7 +69,7 @@ namespace PegTheStreamer.Behaviours.VoteStarters {
             }
 
             if (!didHeal && PTSSettingsManager.AllowPostbattleHeal) {
-                GameObject healButton = containerOptions.Find("HealButton").gameObject;
+                GameObject healButton = containerOptions.Find("ButtonLayout/HealUpgradeContainer/HealButton").gameObject;
                 if (healButton != null && healButton.activeInHierarchy && CanAffordHeal(healButton)) {
                     PostBattleHealVoteOption option = healButton.gameObject.AddComponent(typeof(PostBattleHealVoteOption)) as PostBattleHealVoteOption;
                     voteManager.AddVoteOption(option);
@@ -78,7 +78,7 @@ namespace PegTheStreamer.Behaviours.VoteStarters {
             }
 
             if (!didToad && PTSSettingsManager.AllowPostbattleToad) {
-                GameObject toadMaxHPButton = containerOptions.Find("ToademMaxHPButton").gameObject;
+                GameObject toadMaxHPButton = containerOptions.Find("ButtonLayout/ToademContainer/ToademMaxHPButton").gameObject;
                 if (toadMaxHPButton != null && toadMaxHPButton.activeInHierarchy && CanAffordHeal(toadMaxHPButton)) {
                     PostBattleToadMaxHPVoteOption option = toadMaxHPButton.gameObject.AddComponent(typeof(PostBattleToadMaxHPVoteOption)) as PostBattleToadMaxHPVoteOption;
                     voteManager.AddVoteOption(option);

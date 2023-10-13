@@ -16,9 +16,17 @@ namespace PegTheStreamer {
             Object.Destroy(option.transform.Find("Text (TMP)").GetComponent(typeof(I2.Loc.Localize)));
         }
 
+        public static CarouselTextItem[] textsFromStrings(string[] strings) {
+            var ans = new CarouselTextItem[strings.Length];
+            for (int i = 0; i < strings.Length; ++i) {
+                ans[i].item = strings[i];
+                ans[i].isTranslatable = false;
+            }
+            return ans;
+        }
+
         public static void SetCarouselOptionsText(CarouselOptions option, string[] strings) {
-            option.locStrings = strings;
-            option.isTranslatable = false;
+            option.textItems = textsFromStrings(strings);
         }
 
         public static void SetOptionColor(GameObject option, Color color) {

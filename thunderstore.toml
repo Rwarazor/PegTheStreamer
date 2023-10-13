@@ -4,7 +4,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "rwarazor"
 name = "PegTheStreamer"
-versionNumber = "1.1.0"
+versionNumber = "1.2.0"
 description = "Peg your streamer... I mean, Twitch chat integration for Peglin!"
 websiteUrl = "https://github.com/Rwarazor/PegTheStreamer"
 containsNsfwContent = false

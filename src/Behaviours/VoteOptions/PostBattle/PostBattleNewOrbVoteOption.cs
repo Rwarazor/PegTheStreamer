@@ -32,7 +32,7 @@ namespace PegTheStreamer.Behaviours.VoteOptions {
         }
 
         protected override void SetupCountText() {
-            this._voteCountText = Utils.CreateText(gameObject.transform, "postbattle new orb", new Vector3(43, 50, 0));
+            this._voteCountText = Utils.CreateText(gameObject.transform, "postbattle new orb", new Vector3(51, -57, 0));
         }
     }
 }

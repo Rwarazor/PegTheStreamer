@@ -24,7 +24,7 @@ namespace PegTheStreamer.Behaviours.VoteOptions {
         }
 
         protected override void SetupCountText() {
-            this._voteCountText = Utils.CreateText(gameObject.transform, "postbattle heal", new Vector3(270, -10, 0));
+            this._voteCountText = Utils.CreateText(gameObject.transform, "postbattle heal", new Vector3(100, -10, 0));
         }
     }
 }

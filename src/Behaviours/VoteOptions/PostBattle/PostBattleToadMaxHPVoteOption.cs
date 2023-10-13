@@ -24,7 +24,8 @@ namespace PegTheStreamer.Behaviours.VoteOptions {
         }
 
         protected override void SetupCountText() {
-            this._voteCountText = Utils.CreateText(gameObject.transform, "postbattle toad max hp", new Vector3(270, -10, 0));
+            this._voteCountText = Utils.CreateText(gameObject.transform, "postbattle toad max hp", new Vector3(313, -45, 0));
+            this._voteCountText.fontSize = 28;
         }
     }
 }
